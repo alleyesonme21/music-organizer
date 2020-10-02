@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+<div class="container">
+  <br>
+  <h1>Music Item Details: </h1>
+  <h2>Album: @Model["music"].Description</h2>
+  <h2>Year: @Model["music"].Year</h2>
+  <h2>Discs: @Model["music"].Discs<h2>
+  <h2>Artist: @Model["category"].Name</h2>
+  <h2>category: @Model["music"].MusicCategory</h2>
+  <p><a href='/categories/@Model["category"].Id/musics/new'>Add another music item</a></p>
+  <p><a href='/categories'>View all categories</a></p>
+</div>

@@ -1,0 +1,19 @@
+@{
+  Layout = "_Layout";
+}
+<div class="container">
+  <br>
+  <h1>Add a new album to @Model.Name</h1>
+  <form action="/categories/@Model.Id/musics" method="post">
+    <input id="categoryId" name="categoryId" type="hidden" value="@Model.Id">
+    <label for="albumName">Album Name</label>
+    <input id="albumName" name="albumName" type="text">
+    <label for="albumYear">Album Year</label>
+    <input id="albumYear" name="albumYear" type="text">
+    <label for="discNumber">Number of Discs</label>
+    <input id="discNumber" name="discNumber" type="text">
+    <label for="musicCategory">Category</label>
+    <input id="musicCategory" name="musicCategory" type="text">
+    <button type='submit'>Add Music</button>
+  </form>
+</div>
